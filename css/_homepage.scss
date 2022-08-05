@@ -1,0 +1,122 @@
+.weekly, .resources, .phone {
+    @media #{$small} {
+        padding: 20px 50px;
+        align-items: center;
+        .info {
+            width: 50%;
+        }
+        .illus {
+            width: 45%;
+        }
+    }
+    @media #{$mobile} {
+        flex-direction: column;
+        .info {
+            order: 2;
+        }
+        .illus {
+            order: 1;
+            margin-bottom: 15px;
+        }
+    }
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    .info {
+        h1 {
+            font-size: 30px;
+        }
+       .users {
+        margin: 15px 0;
+       }
+       p {
+        .blue {
+            color: $link-color;
+        }
+       }
+    }
+    .illus {
+        img {
+            width: 100%;
+        }
+    }
+
+
+
+}
+
+//Rules that applied to the sign in page
+.sign-up {
+    @media #{$small} {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 50px;
+        .info {
+            width: 47%;
+        }
+        .form {
+            width: 47%;
+        }
+    }
+    @media #{$mobile} {}
+    padding: 20px 20px;
+    .info {
+        .more-info {
+            display: flex;
+            margin-bottom: 15px;
+            i {
+                margin-right: 15px;
+                color: rgb(254, 255, 182);
+            }
+            p {
+                margin: 0;
+                color: $black;
+            }
+        }
+
+    }
+    .form {
+        background-color: $white;
+        padding: 20px;
+        border-radius: 4px;
+        h2 {
+            font-size: 20px;
+        }
+        form {
+            p {
+                color: $black;
+                font-weight: 600;
+                &.check {
+                    font-size: 12px;
+                    font-weight: 400;
+                    .blue {
+                        color: $link-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            input {
+                border: none;
+                outline: none;
+                background: none;
+                padding: 10px 12px;
+                &.field {
+                    width: 100%;
+                    display: block;
+                    border: 1px solid $text-color;
+                    margin-bottom: 10px;
+                }
+                &.submit {
+                    width: 100%;
+                    display: block;
+                    background-color: $link-color;
+                }
+                &.checkbox {
+                    display: inline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

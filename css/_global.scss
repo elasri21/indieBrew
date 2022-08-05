@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: $family;
+    background-color: $main-bg;
+}
+br {
+    @media #{$skiny} {
+        display: none;
+    }
+}
+h1, h2 {
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 20px;
+    
+}
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: $text-color;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
+}
+a {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.center {
+    text-align: center;
+}
+.blue {
+    color: $link-color;
+}
+
+.last {
+    margin-bottom: 0;
+}
+.with-border-bottom {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $text-color;
+}
+
